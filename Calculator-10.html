@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anonymous">
+    <link rel="stylesheet" type="text/css" href="cal-stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="">
+    <meta http-equiv="refresh" content="1000">
+    <title>Calculator using JS</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="inner-calculator">
+            <form name="calcu_input" id="form">
+                <input type="text" name="answer" id="answer"><br>
+                <input type="button" class="btn" value="1" onclick="calcu_input.answer.value += '1';">
+                <input type="button" class="btn" value="2" onclick="calcu_input.answer.value += '2';">
+                <input type="button" class="btn" value="3" onclick="calcu_input.answer.value += '3';">
+                <input type="button" class="btn" value="+" onclick="calcu_input.answer.value += '+';">
+                <br>
+                <input type="button" class="btn" value="4" onclick="calcu_input.answer.value += '4';">
+                <input type="button" class="btn" value="5" onclick="calcu_input.answer.value += '5';">
+                <input type="button" class="btn" value="6" onclick="calcu_input.answer.value += '6';">
+                <input type="button" class="btn" value="-" onclick="calcu_input.answer.value += '-';">
+                <br>
+                <input type="button" class="btn" value="7" onclick="calcu_input.answer.value += '7';">
+                <input type="button" class="btn" value="8" onclick="calcu_input.answer.value += '8';">
+                <input type="button" class="btn" value="9" onclick="calcu_input.answer.value += '9';">
+                <input type="button" class="btn" value="*" onclick="calcu_input.answer.value += '*';">
+                <br>
+                <input type="button" class="btn" value="/" onclick="calcu_input.answer.value += '/'">
+                <input type="button" class="btn" value="0" onclick="calcu_input.answer.value += '0'">
+                <input type="button" class="btn" value="." onclick="calcu_input.answer.value += '.'">
+                <input type="button" class="btn" value="=" onclick="calcu_input.answer.value = console.log(eval(calcu_input.answer.value));"><br>
+                <input type="button" id="clear-btn" value="Clear All" onclick="document.getElementById('answer').value = ' ';">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
